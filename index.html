@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -21,30 +25,36 @@
         <nav>
           <ul class="pagination">
             <li>
-              <a href="./index.html" class="link current">Студия</a>
+              <a href="./index.html" class="link pagination-link current"
+                >Студия</a
+              >
             </li>
             <li>
-              <a href="./portfolio.html" class="link">Портфолио</a>
+              <a href="./portfolio.html" class="link pagination-link"
+                >Портфолио</a
+              >
             </li>
             <li>
-              <a href="" class="link">Контакты</a>
+              <a href="" class="link pagination-link">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="contacts">
           <li>
-            <a href="mailto:info@devstudio.com" class="link"
+            <a href="mailto:info@devstudio.com" class="link contacts-link"
               >info@devstudio.com</a
             >
           </li>
           <li>
-            <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+            <a href="tel:+380961111111" class="link contacts-link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
     </header>
     <main>
-      <section class="hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero-title">
             Эффективные решения<br />
@@ -53,33 +63,33 @@
           <button class="hero-btn" type="button">Заказать услугу</button>
         </div>
       </section>
-      <section class="priciples">
+      <section class="section principles">
         <div class="container">
-          <h2 hidden class="priciples-title">Наши принципы</h2>
-          <ul>
-            <li>
-              <h3 class="priciples-subtitle">Внимание к деталям</h3>
+          <h2 hidden class="principles-title">Наши принципы</h2>
+          <ul class="principles-items">
+            <li class="principles-itm">
+              <h3 class="principles-subtitle">Внимание к деталям</h3>
               <p class="principles-text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li>
-              <h3 class="priciples-subtitle">Пунктуальность</h3>
+            <li class="principles-itm">
+              <h3 class="principles-subtitle">Пунктуальность</h3>
               <p class="principles-text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
-              <h3 class="priciples-subtitle">Планирование</h3>
+            <li class="principles-itm">
+              <h3 class="principles-subtitle">Планирование</h3>
               <p class="principles-text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li>
-              <h3 class="priciples-subtitle">Современные технологии</h3>
+            <li class="principles-itm">
+              <h3 class="principles-subtitle">Современные технологии</h3>
               <p class="principles-text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
@@ -88,65 +98,81 @@
           </ul>
         </div>
       </section>
-      <section class="wedo">
+      <section class="section wedo">
         <div class="container">
           <h2 class="wedo-title">Чем мы занимаемся</h2>
-          <ul>
-            <li>
+          <ul class="wedo-cards">
+            <li class="wedo-pic">
               <img src="./images/box-first.jpg" alt="coding" width="370" />
             </li>
-            <li>
+            <li class="wedo-pic">
               <img
                 src="./images/box-second.jpg"
                 alt="apps for mobile devices"
                 width="370"
               />
             </li>
-            <li>
+            <li class="wedo-pic">
               <img src="./images/box-third.jpg" alt="design" width="370" />
             </li>
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="section team">
         <div class="container">
           <h2 class="team-title">Наша команда</h2>
-          <ul>
-            <li>
-              <img
-                src="./images/employee-first.jpg"
-                alt="product designer"
-                width="270"
-              />
-              <h3 class="team-employee">Игорь Демьяненко</h3>
-              <p class="team-position">Product Designer</p>
+          <ul class="team-list">
+            <li class="team-set">
+              <article class="team-card">
+                <div class="team-thumb">
+                  <img
+                    src="./images/employee-first.jpg"
+                    alt="product designer"
+                    width="270"
+                  />
+                </div>
+                <h3 class="team-employee">Игорь Демьяненко</h3>
+                <p class="team-position">Product Designer</p>
+              </article>
             </li>
-            <li>
-              <img
-                src="./images/employee-second.jpg"
-                alt="frontend developer"
-                width="270"
-              />
-              <h3 class="team-employee">Ольга Репина</h3>
-              <p class="team-position">Frontend Developer</p>
+            <li class="team-set">
+              <article class="team-card">
+                <div class="team-thumb">
+                  <img
+                    src="./images/employee-second.jpg"
+                    alt="frontend developer"
+                    width="270"
+                  />
+                </div>
+                <h3 class="team-employee">Ольга Репина</h3>
+                <p class="team-position">Frontend Developer</p>
+              </article>
             </li>
-            <li>
-              <img
-                src="./images/employee-third.jpg"
-                alt="marketing"
-                width="270"
-              />
-              <h3 class="team-employee">Николай Тарасов</h3>
-              <p class="team-position">Marketing</p>
+            <li class="team-set">
+              <article class="team-card">
+                <div class="team-thumb">
+                  <img
+                    src="./images/employee-third.jpg"
+                    alt="marketing"
+                    width="270"
+                  />
+                </div>
+                <h3 class="team-employee">Николай Тарасов</h3>
+                <p class="team-position">Marketing</p>
+              </article>
             </li>
-            <li>
-              <img
-                src="./images/employee-fourth.jpg"
-                alt="ui designer"
-                width="270"
-              />
-              <h3 class="team-employee">Михаил Ермаков</h3>
-              <p class="team-position">UI Designer</p>
+            <li class="team-set">
+              <article class="team-card">
+                <div class="team-thumb">
+                  <img
+                    src="./images/employee-fourth.jpg"
+                    alt="ui designer"
+                    width="270"
+                  />
+                </div>
+                <h3 class="team-employee">Михаил Ермаков</h3>
+                <p class="team-position">UI Designer</p>
+              </article>
             </li>
           </ul>
         </div>
@@ -157,23 +183,23 @@
         <a href="./index.html" class="logo"
           >Web<span class="logo-part-footer">Studio</span></a
         >
-        <address class="address">
+        <adress class="adress">
           <ul>
             <li>
-              <p>г. Киев, пр-т Леси Украинки, 26</p>
+              <p class="adress-physical">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
             <li>
-              <a href="mailto:info@example.com" class="address-link"
+              <a href="mailto:info@example.com" class="adress-link"
                 >info@example.com</a
               >
             </li>
             <li>
-              <a href="tel:+380991111111" class="address-link"
+              <a href="tel:+380991111111" class="adress-link"
                 >+38 099 111 11 11</a
               >
             </li>
           </ul>
-        </address>
+        </adress>
       </div>
     </footer>
   </body>
