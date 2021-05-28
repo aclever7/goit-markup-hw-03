@@ -30,12 +30,6 @@ secondary - raleway
   --box-border-color: #eeeeee;
 }
 
-/* * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-} */
-
 body {
   font-family: roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -57,7 +51,7 @@ body img {
   height: auto;
 }
 
-h1,
+/* h1,
 h2,
 h3,
 h4,
@@ -65,7 +59,7 @@ h5,
 h6,
 p {
   margin: 0;
-}
+} */
 
 .container {
   width: 1200px;
@@ -78,10 +72,16 @@ p {
 
 /* header */
 
-.header,
-.footer {
-  padding-top: 0;
-  padding-bottom: 0;
+.header {
+  padding-left: 215px;
+  padding-right: 215px;
+  border-bottom: 1px solid var(--box-border-color);
+}
+
+.container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
@@ -105,23 +105,39 @@ p {
   text-decoration-color: var(--active-color);
 }
 
-.pagination-link {
-  /* padding-top: 32px;
-  padding-bottom: 32px; */
+.pagination {
+  display: flex;
+  margin-left: 93px;
+}
+
+.pagination-item:not(:first-child) {
+  margin-left: 50px;
+}
+
+.pagination-item {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
   letter-spacing: 0.02em;
 }
 
-.pagination-link:hover,
-.pagination-link:active {
+.pagination-item:hover,
+.pagination-item:active {
   color: var(--active-color);
   text-decoration-color: var(--active-color);
 }
 
-.pagination-link.current {
+.pagination-item.current {
   color: var(--active-color);
+}
+
+.contacts {
+  display: flex;
+  /* margin-left: 331px; */
+}
+
+.contacts-item:not(:first-child) {
+  margin-left: 50px;
 }
 
 .contacts-link {
@@ -145,6 +161,7 @@ p {
   /* text-align: center; */
 }
 
+.pagination,
 .principles-subtitle,
 .principles-text,
 .wedo-title,
@@ -154,8 +171,10 @@ p {
 .team-set,
 .team-employee,
 .team-position,
+.adress-items,
 .adress-physical,
 .buttons,
+.portfolio-content,
 .portfolio-title,
 .portfolio-text {
   padding: 0;
@@ -187,6 +206,7 @@ p {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
+  min-width: 200px;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 32px;
@@ -323,7 +343,13 @@ p {
 /* footer */
 
 .footer {
+  padding: 60px 215px;
   background-color: var(--dark-background-color);
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .adress {
@@ -334,6 +360,10 @@ p {
   line-height: 1.714;
   letter-spacing: 0.03em;
   color: var(--white-color);
+}
+
+.adress-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .adress-link {
@@ -392,6 +422,7 @@ p {
 .portfolio-content {
   display: flex;
   flex-wrap: wrap;
+  box-sizing: border-box;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -400,16 +431,17 @@ p {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .portfolio-title {
   margin-bottom: 4px;
-  max-width: 304px;
+  /* max-width: 304px; */
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 .portfolio-text {
