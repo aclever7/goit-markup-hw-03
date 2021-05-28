@@ -51,15 +51,29 @@ body img {
   height: auto;
 }
 
-/* h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+/* margins and paddings reset */
+
+.pagination,
+.principles-subtitle,
+.principles-text,
+.wedo-title,
+.wedo-cards,
+.team-title,
+.team-list,
+.team-set,
+.team-employee,
+.team-position,
+.adress-items,
+.adress-physical,
+.buttons,
+.portfolio-content,
+.portfolio-title,
+.portfolio-text {
+  padding: 0;
   margin: 0;
-} */
+}
+
+/* container */
 
 .container {
   width: 1200px;
@@ -158,27 +172,6 @@ p {
 
 .section {
   padding-bottom: 94px;
-  /* text-align: center; */
-}
-
-.pagination,
-.principles-subtitle,
-.principles-text,
-.wedo-title,
-.wedo-cards,
-.team-title,
-.team-list,
-.team-set,
-.team-employee,
-.team-position,
-.adress-items,
-.adress-physical,
-.buttons,
-.portfolio-content,
-.portfolio-title,
-.portfolio-text {
-  padding: 0;
-  margin: 0;
 }
 
 /* section hero */
