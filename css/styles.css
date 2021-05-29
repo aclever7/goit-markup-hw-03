@@ -36,41 +36,26 @@ body {
   color: var(--main-text-color);
 }
 
-body ul {
+ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
-body a {
+p {
+  padding: 0;
+  margin: 0;
+}
+
+a {
   color: inherit;
   text-decoration: none;
 }
 
-body img {
+img {
   display: block;
   width: 100%;
   height: auto;
-}
-
-/* margins and paddings reset */
-
-.pagination,
-.principles-subtitle,
-.principles-text,
-.wedo-title,
-.wedo-cards,
-.team-title,
-.team-list,
-.team-set,
-.team-employee,
-.team-position,
-.adress-items,
-.adress-physical,
-.buttons,
-.portfolio-content,
-.portfolio-title,
-.portfolio-text {
-  padding: 0;
-  margin: 0;
 }
 
 /* container */
@@ -87,14 +72,14 @@ body img {
 /* header */
 
 .header {
-  padding-left: 215px;
-  padding-right: 215px;
   border-bottom: 1px solid var(--box-border-color);
 }
 
 .container-header {
   display: flex;
   justify-content: space-between;
+  margin-top: 24px;
+  margin-bottom: 25px;
   align-items: center;
 }
 
@@ -121,7 +106,6 @@ body img {
 
 .pagination {
   display: flex;
-  margin-left: 93px;
 }
 
 .pagination-item:not(:first-child) {
@@ -171,6 +155,7 @@ body img {
 /* main */
 
 .section {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -226,10 +211,6 @@ body img {
   color: var(--main-text-color);
 } */
 
-.principles {
-  padding-top: 94px;
-}
-
 .principles-items {
   display: flex;
   margin-left: -30px;
@@ -256,6 +237,10 @@ body img {
   color: var(--secondary-text-color);
 }
 
+.wedo {
+  padding-top: 0;
+}
+
 .wedo-title {
   margin-bottom: 50px;
   font-weight: bold;
@@ -278,7 +263,6 @@ body img {
 }
 
 .team {
-  padding-top: 94px;
   background-color: var(--gray-background-color);
 }
 
@@ -300,19 +284,15 @@ body img {
 .team-set {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
-}
-
-.team-card {
-  padding-bottom: 30px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-thumb {
-  text-align: center;
-  padding-bottom: 30px;
+.team-details {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .team-employee {
@@ -336,19 +316,18 @@ body img {
 /* footer */
 
 .footer {
-  padding: 60px 215px;
+  padding: 60px 0;
   background-color: var(--dark-background-color);
 }
 
 .logo-footer {
-  display: block;
+  display: inline-block;
   margin-bottom: 20px;
 }
 
 .adress {
   font-family: roboto, sans-serif;
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
@@ -371,11 +350,6 @@ body img {
 
 /* portfolio */
 
-.portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .buttons {
   display: flex;
   justify-content: center;
@@ -386,9 +360,12 @@ body img {
   margin-left: 8px;
 } */
 
+.button-item {
+  margin-right: 8px;
+}
+
 .buttons-btn {
   display: inline-block;
-  margin-right: 8px;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 6px 22px;
@@ -416,15 +393,17 @@ body img {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  margin-top: -30px;
   margin-left: -30px;
 }
 
 .portfolio-item {
   flex-basis: calc(100% / 3 - 30px);
-  margin-top: 30px;
   margin-left: 30px;
   margin-bottom: 30px;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfolio-title {
