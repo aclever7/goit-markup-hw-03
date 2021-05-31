@@ -36,6 +36,12 @@ body {
   color: var(--main-text-color);
 }
 
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
 ul {
   list-style: none;
   padding: 0;
@@ -72,14 +78,14 @@ img {
 /* header */
 
 .header {
+  height: 80px;
+  display: flex;
   border-bottom: 1px solid var(--box-border-color);
 }
 
 .container-header {
   display: flex;
   justify-content: space-between;
-  margin-top: 24px;
-  margin-bottom: 25px;
   align-items: center;
 }
 
@@ -170,7 +176,7 @@ img {
 
 .hero-title {
   margin-top: 0;
-  margin-bottom: 30;
+  /* margin-bottom: 30; */
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -182,6 +188,7 @@ img {
 
 .hero-btn {
   display: inline-block;
+  margin-top: 30px;
   margin-right: auto;
   margin-left: auto;
   min-width: 200px;
@@ -201,15 +208,6 @@ img {
   border-radius: 4px;
   cursor: pointer;
 }
-
-/* .principles-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.167;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-} */
 
 .principles-items {
   display: flex;
@@ -291,8 +289,8 @@ img {
 }
 
 .team-details {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-employee {
@@ -360,7 +358,7 @@ img {
   margin-left: 8px;
 } */
 
-.button-item {
+.button-item:not(:last-child) {
   margin-right: 8px;
 }
 
